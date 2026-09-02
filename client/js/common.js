@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5001/api";
+const API_URL = "https://campuskart-production-e75a.up.railway.app/api/health";
 
 const categories = [
   "Books",
