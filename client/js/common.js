@@ -1,4 +1,4 @@
-const API_URL = "https://campuskart-production-e75a.up.railway.app/api/health";
+const API_URL = "https://campuskart-production-e75a.up.railway.app/api";
 
 const categories = [
   "Books",
