@@ -1,0 +1,193 @@
+.register-page {
+  min-height: calc(100vh - 154px);
+  display: grid;
+  place-items: center;
+  padding: 50px 0 70px;
+}
+
+.register-page .card {
+  width: min(520px, 100%);
+  padding: 36px;
+  border: 1px solid rgba(227, 232, 239, 0.95);
+  border-radius: 30px;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.98),
+      rgba(249, 251, 253, 0.98)
+    );
+  box-shadow:
+    0 25px 75px rgba(15, 23, 42, 0.09),
+    0 5px 18px rgba(15, 23, 42, 0.03);
+  position: relative;
+  overflow: hidden;
+}
+
+.register-page .card::before {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  top: -100px;
+  right: -65px;
+  border-radius: 50%;
+  background: rgba(37, 99, 235, 0.08);
+  filter: blur(4px);
+  pointer-events: none;
+}
+
+.register-page .card > small {
+  display: block;
+  color: #7d8999;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.register-page .card h1 {
+  margin: 9px 0 28px;
+  color: var(--ink);
+  font-family: Manrope, Inter, sans-serif;
+  font-size: clamp(29px, 4vw, 36px);
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+}
+
+.register-page .card label {
+  display: block;
+  margin-top: 19px;
+  color: #354258;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.register-page .card input {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  padding: 14px 15px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #f7f9fc;
+  color: var(--ink);
+  font-size: 14px;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.register-page .card input::placeholder {
+  color: #a1aab7;
+}
+
+.register-page .card input:focus {
+  background: #ffffff;
+  border-color: #7fa5e8;
+  box-shadow:
+    0 0 0 4px rgba(37, 99, 235, 0.08);
+  transform: translateY(-1px);
+}
+
+
+.register-page .card input:invalid:not(:placeholder-shown) {
+  border-color: #e2a7a7;
+}
+
+.register-page .card input:valid:not(:placeholder-shown) {
+  border-color: #a8d5b6;
+}
+
+.register-page .card #error {
+  min-height: 16px;
+  margin: 12px 0 0;
+  color: #b42318;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.register-page .card button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px 18px;
+  border: 0;
+  border-radius: 14px;
+  background: var(--primary);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow:
+    0 12px 25px rgba(13, 23, 38, 0.15);
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.register-page .card button:hover {
+  background: #182438;
+  transform: translateY(-2px);
+  box-shadow:
+    0 16px 30px rgba(13, 23, 38, 0.19);
+}
+
+
+.register-page .card button:active {
+  transform: translateY(0);
+}
+
+.register-page .card > p:last-child {
+  margin: 18px 0 0;
+  color: var(--muted);
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+.register-page .card > p:last-child a {
+  color: var(--ink);
+  font-weight: 900;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  transition: color 0.2s ease;
+}
+
+
+.register-page .card > p:last-child a:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 600px) {
+  .register-page {
+    width: calc(100% - 24px);
+    padding: 35px 0 50px;
+  }
+  .register-page .card {
+    padding: 27px 21px;
+    border-radius: 24px;
+  }
+  .register-page .card h1 {
+    font-size: 30px;
+    margin-bottom: 23px;
+  }
+  .register-page .card input {
+    padding: 13px 14px;
+  }
+}
+
+@media (max-width: 380px) {
+  .register-page .card {
+    padding: 23px 18px;
+  }
+  .register-page .card h1 {
+    font-size: 28px;
+  }
+}

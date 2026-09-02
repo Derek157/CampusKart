@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>CampusKart - Register</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/register.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="brand"><span class="brand-mark">¢к</span>Campus<span>Kart</span></a>
+      <nav>
+        <a href="index.html">Marketplace</a><a href="login.html">Login</a>
+      </nav>
+    </header>
+    <main class="register-page container">
+      <form id="form" class="card">
+        <small>GET STARTED</small>
+        <h1>Create your campus account</h1>
+        <label>Full name<input id="name" required /></label
+        ><label>Email<input id="email" type="email" required /></label
+        ><label
+          >Password<input id="password" type="password" minlength="6" required
+        /></label>
+        <p id="error"></p>
+        <button>Create account</button>
+        <p>Already registered? <a href="login.html">Log in</a></p>
+      </form>
+    </main>
+    <script src="js/common.js"></script>
+    <script src="js/register.js"></script>
+  </body>
+</html>

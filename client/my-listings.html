@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>CampusKart - My Listings</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/my-listings.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="brand"><span class="brand-mark">¢к</span>Campus<span>Kart</span></a>
+      <nav>
+        <a href="index.html">Marketplace</a>
+        <a class="auth-only active" href="my-listings.html">My Listings</a>
+        <a class="auth-only" href="wishlist.html">Saved</a>
+        <a class="auth-only btn" href="sell.html">+ Sell an item</a>
+        <a class="guest-only" href="login.html">Login</a>
+
+        <div class="auth-only user-menu">
+          <button id="userButton" class="user-button">
+            <span id="userName">User</span>
+            <span class="arrow">⌄</span>
+          </button>
+          <div id="userDropdown" class="user-dropdown">
+            <p id="userEmail"></p>
+            <button id="logoutBtn">Log out</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="dashboard-head">
+        <div>
+          <small>SELLER DASHBOARD</small>
+          <h1>My Listings</h1>
+        </div>
+      </div>
+      <div id="stats" class="stat-cards"></div>
+      <div id="mine" class="dashboard-list"></div>
+    </main>
+    <script src="js/common.js"></script>
+    <script src="js/my-listings.js"></script>
+  </body>
+</html>

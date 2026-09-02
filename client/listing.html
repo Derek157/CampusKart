@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>CampusKart - Listing</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/listing.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="brand"><span class="brand-mark">¢к</span>Campus<span>Kart</span></a>
+      <nav>
+        <a href="index.html">Marketplace</a>
+        <a class="auth-only" href="my-listings.html">My Listings</a>
+        <a class="auth-only" href="wishlist.html">Saved</a>
+        <a class="auth-only btn" href="sell.html">+ Sell an item</a>
+        <a class="guest-only" href="login.html">Login</a>
+
+        <div class="auth-only user-menu">
+          <button id="userButton" class="user-button">
+            <span id="userName">User</span>
+            <span class="arrow">⌄</span>
+          </button>
+          <div id="userDropdown" class="user-dropdown">
+            <p id="userEmail"></p>
+            <button id="logoutBtn">Log out</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <br>
+      <a href="index.html" class="listing-back">← Back</a>
+      <div id="detail" class="listing-detail"></div>
+    </main>
+    <script src="js/common.js"></script>
+    <script src="js/listing.js"></script>
+  </body>
+</html>

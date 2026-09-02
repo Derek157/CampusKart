@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>CampusKart - Sell</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/sell.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="brand"><span class="brand-mark">¢к</span>Campus<span>Kart</span></a>
+      <nav>
+        <a href="index.html">Marketplace</a>
+        <a class="auth-only" href="my-listings.html">My Listings</a>
+        <a class="auth-only" href="wishlist.html">Saved</a>
+        <a class="auth-only btn active" href="sell.html">+ Sell an item</a>
+        <a class="guest-only" href="login.html">Login</a>
+
+        <div class="auth-only user-menu">
+          <button id="userButton" class="user-button">
+            <span id="userName">User</span>
+            <span class="arrow">⌄</span>
+          </button>
+          <div id="userDropdown" class="user-dropdown">
+            <p id="userEmail"></p>
+            <button id="logoutBtn">Log out</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <form id="form" class="sell-card">
+        <small>CREATE LISTING</small>
+        <h1>Sell something useful.</h1>
+        <label>Item name<input id="title" required /></label
+        ><label
+          >Description<textarea id="description" required></textarea>
+        </label>
+        <div class="sell-row">
+          <label>Price<input id="price" type="number" min="1" required /></label
+          ><label>Category<select id="category"></select></label>
+        </div>
+        <div class="sell-row">
+          <label>Condition<select id="condition">
+              <option>Like New</option>
+              <option>Good</option>
+              <option>Fair</option>
+              <option>For Parts</option>
+            </select></label
+          ><label>Location<input id="location" /></label>
+        </div>
+        <label>Photo URL<input id="image" type="url" /></label
+        ><button>Publish listing</button>
+      </form>
+    </main>
+    <script src="js/common.js"></script>
+    <script src="js/sell.js"></script>
+  </body>
+</html>

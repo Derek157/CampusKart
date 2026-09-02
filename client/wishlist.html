@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>CampusKart - Wishlist</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/wishlist.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="brand"><span class="brand-mark">¢к</span>Campus<span>Kart</span></a>
+      <nav>
+        <a href="index.html">Marketplace</a>
+        <a class="auth-only" href="my-listings.html">My Listings</a>
+        <a class="auth-only active" href="wishlist.html">Saved</a>
+        <a class="auth-only btn" href="sell.html">+ Sell an item</a>
+        <a class="guest-only" href="login.html">Login</a>
+
+        <div class="auth-only user-menu">
+          <button id="userButton" class="user-button">
+            <span id="userName">User</span>
+            <span class="arrow">⌄</span>
+          </button>
+          <div id="userDropdown" class="user-dropdown">
+            <p id="userEmail"></p>
+            <button id="logoutBtn">Log out</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="wishlist-head">
+        <small>YOUR SAVED ITEMS</small>
+        <h1>Wishlist</h1>
+        <p>
+          Keep interesting listings here for later.
+        </p>
+      </div>
+      <div id="wish" class="wishlist-grid"></div>
+    </main>
+    <script src="js/common.js"></script>
+    <script src="js/wishlist.js"></script>
+  </body>
+</html>
